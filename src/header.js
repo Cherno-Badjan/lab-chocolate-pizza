@@ -16,14 +16,14 @@ export default class Header extends React.Component {
         return (
             <header>
                 <img alt='icons' src={logo} />
-                <img alt='icons' src={fbLogo} />
-                <img alt='icons' src={twitLogo} />
-                <img alt='icons' src={gooLogo} />
-                <img alt='icons' src={instLogo} />
-                <img alt='icons' src={flickLogo} />
-                <img alt='icons' src={pintLogo} />
-                <img alt='icons' src={rssLogo} />
-                <img alt='icons' src={mailLogo} />
+                <button><img alt='icons' src={fbLogo} /></button>
+                <button><img alt='icons' src={twitLogo} /></button>
+                <button><img alt='icons' src={gooLogo} /></button>
+                <button><img alt='icons' src={instLogo} /></button>
+                <button><img alt='icons' src={flickLogo} /></button>
+                <button><img alt='icons' src={pintLogo} /></button>
+                <button><img alt='icons' src={rssLogo} /></button>
+                <button><img alt='icons' src={mailLogo} /></button>
                 <h1>Delicious</h1>
                 <h3>THE BEST FOOD BLOG ON THE WEB</h3>
 
