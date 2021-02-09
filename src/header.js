@@ -1,31 +1,24 @@
 import React from 'react';
-import logo from './logo.png';
-import fbLogo from './fb-icon.png';
-import twitLogo from './twit-icon.png';
-import gooLogo from './gp-icon.png';
-import instLogo from './insta-icon.png';
-import flickLogo from './flic-icon.png';
-import pintLogo from './pint-icon.png';
-import rssLogo from './rss-icon.png';
-import mailLogo from './mail-icon.png';
-
-
 
 export default class Header extends React.Component {
     render() {
         return (
             <header>
-                <img alt='icons' src={logo} />
-                <button><img alt='icons' src={fbLogo} /></button>
-                <button><img alt='icons' src={twitLogo} /></button>
-                <button><img alt='icons' src={gooLogo} /></button>
-                <button><img alt='icons' src={instLogo} /></button>
-                <button><img alt='icons' src={flickLogo} /></button>
-                <button><img alt='icons' src={pintLogo} /></button>
-                <button><img alt='icons' src={rssLogo} /></button>
-                <button><img alt='icons' src={mailLogo} /></button>
-                <h1>Delicious</h1>
-                <h3>THE BEST FOOD BLOG ON THE WEB</h3>
+                <div className='logo'>
+                    <img alt='icons' src={'../logo.png'} />
+                    <h1>Delicious</h1>
+                    <p>THE BEST FOOD BLOG ON THE WEB</p>
+                </div>
+                <div className='social'>
+                    <a href='www.facebook.com'><img alt='icons' src={'../fb-icon.png'} /></a>
+                    <a href='www.twitter.com'><img alt='icons' src={'../twit-icon.png'} /></a>
+                    <a href='www.google.com'><img alt='icons' src={'../gp-icon.png'} /></a>
+                    <a href='www.instagram.com'><img alt='icons' src={'../insta-icon.png'} /></a>
+                    <a href='www.flickr.com'><img alt='icons' src={'../flic-icon.png'} /></a>
+                    <a href='www.pinterest.com'><img alt='icons' src={'../pint-icon.png'} /></a>
+                    <a href='www.rss.com'><img alt='icons' src={'../rss-icon.png'} /></a>
+                    <a href='www.gmail.com'><img alt='icons' src={'../mail-icon.png'} /></a>
+                </div>
 
             </header>
         );

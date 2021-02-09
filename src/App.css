@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+.social{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo{
+  display: flex;
+  justify-self: flex-start;
+  margin:0%;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -1,17 +1,17 @@
 import React from 'react';
-import recipeImg from './list-bg.png';
 import { ingredients } from './data.js';
 
 const newIngredients = ingredients.map((ingredient) => {
-    return <ul><li>{ingredient.amount} {ingredient.food}</li></ul>
+    return <div><input type='checkbox'></input>{ingredient.amount} {ingredient.food}</div>
 })
 export default class RecipeList extends React.Component {
     render() {
         return (
-            <form>
-                <img alt='list' src={recipeImg} />
-                <ul>{newIngredients}</ul>
-            </form>
+            <div style={{
+                backgroundImage: `url('../list-bg.png')`
+            }}>
+                <div>{newIngredients}</div>
+            </div >
         )
     }
 }
